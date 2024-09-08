@@ -4,9 +4,15 @@
 
 List of design patterns in Python.
 
-## Introduction
+## Some previous topics
 
 Some topics to be covered:
 - decorators
 - inheritance
 - iterators
+
+## Design Patterns
+
+### Creational
+
+- [Factory](creational/factory.py)
