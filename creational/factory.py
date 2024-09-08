@@ -9,17 +9,11 @@ class PetInterface:
 
 # Every class that implements the PetInterface must implement the method speak
 class Dog(PetInterface):
-    def __init__(self):
-        self.name = "Dog"
-
     def speak(self):
         print("Woof!")
 
 
 class Cat(PetInterface):
-    def __init__(self):
-        self.name = "Cat"
-
     def speak(self):
         print("Meow!")
 
