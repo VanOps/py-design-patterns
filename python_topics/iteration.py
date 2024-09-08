@@ -1,30 +1,30 @@
 #!/usr/bin/python3
 
-def iterate(my_list):
-    list_iter = my_list.__iter__()
-    list_length = len(my_list)
+def iterate(list_in):
+    list_iter = list_in.__iter__()
+    list_length = len(list_in)
     while list_length > 0:
         print(list_iter.__next__())
         list_length -= 1
 
 
-def list_comprehension(my_list):
-    new_list = [x for x in my_list]
+def list_comprehension(list_in):
+    new_list = [x for x in list_in]
     print(new_list)
 
 
-def list_comprehension_with_condition(my_list):
-    new_list = [x for x in my_list if x % 2 == 0]
+def list_comprehension_with_condition(list_in):
+    new_list = [x for x in list_in if x % 2 == 0]
     print(new_list)
 
 
-def list_comprehension_with_nested_condition(my_list):
-    new_list = [x for x in my_list if x % 2 == 0 if x > 2]
+def list_comprehension_with_nested_condition(list_in):
+    new_list = [x for x in list_in if x % 2 == 0 if x > 2]
     print(new_list)
 
 
-def list_comprehension_with_nested_loop(my_list):
-    new_list = [(x, y) for x in my_list for y in my_list]
+def list_comprehension_with_nested_loop(list_in):
+    new_list = [(x, y) for x in list_in for y in list_in]
     print(new_list)
 
 
