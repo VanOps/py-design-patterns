@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+
 # Factory pattern is a creational pattern that uses factory methods to create objects.
 
 
@@ -20,6 +21,10 @@ class Cat(PetInterface):
 
 # Factory class that returns the object based on the type
 class PetFactory:
+    # Static method to create the object based on the type.
+    # It is static because it does not need to access any instance variable of the class.
+    # It is a utility method that does not need to refer to the class or instance.
+    # @staticmethod is a decorator that defines a static method
     @staticmethod
     def get_pet(type):
         if type == "dog":
